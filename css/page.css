@@ -1,0 +1,560 @@
+.container{
+    padding: 20px 200px; 
+}
+
+body{
+    color: rgb(0, 0, 0);
+}
+
+main{
+    padding-top: 100px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    position: fixed;
+	width: 100%;
+    z-index: 999;
+}
+
+
+nav .logo{
+    display: flex;
+    font: 600 30px ;
+    border-radius: 10px;
+    width: 8%;
+    height: 60px;
+    align-items: center;
+}
+
+.NavBg{
+    background-color: #FECD45;
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #000000;
+}
+
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle-label {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-toggle-label {
+        display: block;
+    }
+
+    #navbar-toggle:checked + .navbar-toggle-label + .navbar-menu {
+        display: flex;
+    }
+}
+
+
+
+
+.section1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 30vh;
+    align-items: center;
+}
+
+.section1-bg-Color{
+    width: 100%;
+    background-color: #F9FAFC;
+}
+
+.section1 h1{
+    font: 600 40px Arial;
+    color: #231E41;
+}
+
+.section1 a{
+    padding: 10px;
+    background-color: #FECD45;
+    font: 400 20px Arial;
+}
+
+
+
+.section2{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.section2Img {
+    width: 500px;
+    height: 600px;
+    
+}
+
+.section2Img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+.white{
+    position: absolute;
+    background-color: #FECD45;
+    width: 250px;
+    height: 250px;
+    top: 800px;
+    left: 470px;
+    -webkit-box-shadow: 12px 13px 59px 8px rgba(0,0,0,0.82);
+    -moz-box-shadow: 12px 13px 59px 8px rgba(0,0,0,0.82);
+    box-shadow: 12px 13px 59px 8px rgba(0,0,0,0.82);
+}
+
+.Experiense{
+    position: relative;
+    padding: 15px;
+    text-align: center; 
+    border: dotted 3px #F2F3F5;
+    width: 100px;
+    bottom: 240px;
+    left: 300px;
+    z-index: 99;
+    width: 150px;
+    height: 150px;
+    color: black;
+    font: 600 31px arial; 
+    cursor: pointer;
+}
+
+.Experiense h1{
+    padding-top: 10px;
+}
+
+
+.text1{
+    justify-content: space-between;
+    line-height: 60px;
+}
+
+#secoundP{
+    padding-top: 30px;
+}
+
+.text1 p{
+    color: #77778E;
+    font: 400 15px Arial;
+    line-height: 30px;
+    width: 400px;
+    padding-left: 100px;
+}
+
+.text1 h2{
+    color: #231E41;
+    font-size: 40px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+}
+
+.text1 img{
+    width: 200px;
+    margin-top: 30px;
+    padding-left: 100px;
+}
+
+.cicles{
+    position: absolute;
+
+}
+
+.cicle1{
+    position: relative;
+    top: 500px;
+    right: 20px;
+    color: #EDEDED;
+}
+
+.cicle2{
+    position: relative;
+    top: 550px;
+    left: 50px;
+    color: #EDEDED;
+}
+
+.cicle3{
+    position: relative;
+    top: 20px;
+    left: 450px;
+    color: hsl(0, 0%, 0%);
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title h2{
+    font: 500 40px arial;
+    margin: 0 0 30px;
+    color: #231E41;
+}
+
+.title p{
+    font: 500 14px;
+    color: #77778E;
+}
+
+.titleButton{
+    position: relative;
+    top: 30px;
+}
+
+#btnStyle{
+    padding: 10px;
+    background-color: #FECD45;
+}
+
+
+.section3{
+    margin: 50px 0;
+}
+.allBoxes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.box{
+    width: 300px;
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.box h1{
+    font:300 30px Arial ;
+    color: #FECD45;
+}
+
+.box h3{
+    font: 400 22px Arial;
+    padding-bottom: 20px;
+    width: 250px;
+}
+
+.box p{
+    font: 300 15px;
+    color: #77778E;
+}
+
+
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text h1{
+    font: 700 28px Arial;
+    padding-bottom: 20px;
+}
+
+.text p{
+    font: 300 15px;
+    color: #77778E;
+}
+
+.cardHTML{
+    background-color: #F9FAFC;
+    width:  250px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.cardHTML img{
+    width: 250px;
+}
+
+.allCardsHTML{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.icons ul {
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons ul li{
+    align-items: center;
+}
+
+.icons a:hover{
+    background-color: #FECD45;
+    color: #fff;
+    transition: 1s;
+}
+
+
+
+.section5{
+    margin-top: 100px
+}
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 300px;
+    margin-right: 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+.btns button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 40px;
+    justify-content: space-between;
+    width: 480px;
+}
+
+.carousel-item p{
+    color: #707088;
+    font: 400 15px;
+}
+
+.carousel-price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-price h3{
+    font: 600 24px Arial;
+
+
+}
+
+
+.FText{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.FText h2{
+    font: 500 72px arial;
+    color: #231E41;
+}
+
+.FText p {
+    color: #6F6F87;
+    font-size: 15px;
+    margin: 30px 0;
+}
+footer{
+    margin-top: 100px;
+}
+
+.Animate img{
+    height: 70vh;
+    width: 600px ;
+}
+
+.ffBgColor{
+    background-color: #F2F3F5;
+    width: 100%;
+}
+
+.ff{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.ficons ul{
+
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fp p {
+    color:#77778E;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none; /* Прячем меню по умолчанию на мобильных устройствах */
+    }
+
+    .navbar-toggle {
+        display: block; /* Показываем кнопку меню */
+    }
+
+    .navbar-toggle-label {
+        display: block; /* Показываем иконку меню */
+    }
+
+    .navbar-menu.active {
+        display: block; /* Показываем меню, когда оно активно */
+    }
+
+    .section1 {
+        text-align: center; /* Выравнивание текста по центру */
+    }
+
+    .section2 {
+        text-align: center; /* Выравнивание текста по центру */
+    }
+
+    .cicles {
+        display: flex;
+        flex-direction: column; /* Выравнивание кругов по вертикали */
+        align-items: center; /* Центрируем круги */
+    }
+
+    .box {
+        text-align: center; /* Выравнивание текста по центру */
+        margin-bottom: 20px; /* Отступ снизу для блоков */
+    }
+
+    .allCardsHTML {
+        display: flex;
+        flex-direction: column; /* Выравнивание карточек по вертикали */
+        align-items: center; /* Центрируем карточки */
+    }
+
+    .carousel-container {
+        width: 100%; /* Устанавливаем ширину контейнера карусели в 100% */
+    }
+
+    .carousel-item img {
+        width: 100%; /* Устанавливаем ширину изображений в 100% */
+    }
+
+    .FText {
+        text-align: center; /* Выравнивание текста по центру */
+    }
+
+    .container {
+        padding: 0 15px; /* Добавляем горизонтальные отступы */
+    }
+}
+
+/* Стили для планшетов (от 769px до 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cicles {
+        display: flex;
+        flex-direction: row; /* Выравнивание кругов по горизонтали */
+        justify-content: center; /* Центрируем круги */
+    }
+
+    .section3 {
+        display: flex;
+        flex-wrap: wrap; /* Разрешаем перенос элементов на следующую строку */
+        justify-content: space-between; /* Распределяем блоки по горизонтали */
+    }
+
+    .box {
+        flex: 1 1 calc(50% - 20px); /* Устанавливаем ширину блоков на 50% минус отступ */
+        margin-bottom: 20px; /* Отступ снизу для блоков */
+    }
+
+    .allCardsHTML {
+        display: flex;
+        flex-wrap: wrap; /* Разрешаем перенос карточек на следующую строку */
+        justify-content: space-between; /* Распределяем карточки по горизонтали */
+    }
+
+    .cardHTML {
+        flex: 1 1 calc(50% - 20px); /* Устанавливаем ширину карточек на 50% минус отступ */
+        margin-bottom: 20px; /* Отступ снизу для карточек */
+    }
+}

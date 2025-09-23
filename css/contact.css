@@ -1,0 +1,496 @@
+.container{
+    padding: 20px 200px; 
+}
+
+body{
+    color: rgb(0, 0, 0);
+}
+
+main{
+    padding-top: 100px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    position: fixed;
+	width: 100%;
+    z-index: 999;
+}
+
+
+nav .logo{
+    display: flex;
+    font: 600 30px ;
+    border-radius: 10px;
+    width: 8%;
+    height: 60px;
+    align-items: center;
+}
+
+.NavBg{
+    background-color: #FECD45;
+    width: 100%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: "Playwrite AR", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: #000000;
+}
+
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle-label {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        padding: 10px 0;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-toggle-label {
+        display: block;
+    }
+
+    #navbar-toggle:checked + .navbar-toggle-label + .navbar-menu {
+        display: flex;
+    }
+}
+
+
+
+
+
+.sction1{
+    display: flex;
+    align-items: center;
+    height: 200px;
+}
+
+.s1text a{
+    background-color: #FECD45;
+    padding: 10px;
+    position: relative;
+    top: 30px;
+    
+}
+
+.s1text{
+    width: 500px;
+}
+
+.s1text p{
+    color: #5D5973;
+    font: 400 16px;
+    margin-top: 50px;
+}
+
+.s1text h1{
+    color: #231E41;
+    font: 600 70px Arial;
+}
+
+
+#Contact{
+    background-color: #F2F3F5;
+    color: #5D5973;
+    width: 70px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+
+
+.sendMessage {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+    margin-left: 50%; 
+    position: relative;  
+    bottom: 300px;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #FECD45;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+.allBoxes{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.allBoxes h1{
+    color: #FECD45;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.nt{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.nt h3{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.box p{
+    color: #808095;
+    font-size: 15px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+
+.ffBgColor{
+    background-color: #F2F3F5;
+    width: 100%;
+}
+
+.ff{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.ficons ul{
+
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.fp p {
+    color:#77778E;
+}
+
+/* Мобильные устройства */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    nav .logo {
+        width: 40%;
+        font-size: 24px;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #FECD45;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar-toggle-label {
+        display: block;
+    }
+
+    #navbar-toggle:checked + .navbar-toggle-label + .navbar-menu {
+        display: flex;
+    }
+
+    .section1, .section2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section1 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section2Img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .white {
+        position: static;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .Experiense {
+        position: static;
+        margin: 20px auto;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    .text1 {
+        padding: 0 10px;
+    }
+
+    .cicles {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .carousel-container {
+        height: auto;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+        margin-right: 0;
+    }
+
+    .btns button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section3 .boxes {
+        flex-direction: column;
+    }
+
+    .box12, .box34 {
+        flex-direction: column;
+    }
+
+    .allCards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    .FText {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .Animate img {
+        height: auto;
+        width: 80%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .ff {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ficons ul {
+        flex-direction: column;
+    }
+}
+
+/* Планшеты */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 20px 100px;
+    }
+
+    header {
+        padding: 0 30px;
+    }
+
+    nav .logo {
+        width: 20%;
+        font-size: 28px;
+    }
+
+    .section1, .section2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .section1 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .section2Img {
+        width: 100%;
+        height: auto;
+    }
+
+    .white {
+        width: 100%;
+        height: auto;
+    }
+
+    .Experiense {
+        margin: 20px auto;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    .text1 {
+        padding: 0 20px;
+    }
+
+    .cicles {
+        margin-top: 20px;
+    }
+
+    .carousel-container {
+        height: auto;
+    }
+
+    .carousel-item {
+        min-width: 50%;
+        margin-right: 10px;
+    }
+
+    .section3 .boxes {
+        flex-direction: column;
+    }
+
+    .box12, .box34 {
+        flex-direction: column;
+    }
+
+    .allCards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    .FText {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        text-align: center;
+    }
+
+    .Animate img {
+        height: auto;
+        width: 80%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .ff {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ficons ul {
+        flex-direction: column;
+    }
+}
