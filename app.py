@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify, render_template_string, redirect, url_for
 from werkzeug.security import generate_password_hash, check_password_hash
 
-app = Flask(__name__, static_folder='.', static_url_path='', template_folder='templates')
+app = Flask(__name__, static_folder='templates', static_url_path='', template_folder='templates')
 
 users = []
 
